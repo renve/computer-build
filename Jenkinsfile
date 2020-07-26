@@ -17,9 +17,9 @@ pipeline {
         stage('Test') {
             steps { 
                 sh 'test -f build/laptop.txt'
-                sh 'grep "chassis" build/laptop.txt'
-                sh 'grep "engine" build/laptop.txt'
-                sh 'grep "body" build/laptop.txt'
+                sh 'grep "screen" build/laptop.txt'
+                sh 'grep "keyboard" build/laptop.txt'
+                sh 'grep "motherboard" build/laptop.txt'
             }    
         }    
     
